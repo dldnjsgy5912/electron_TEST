@@ -1,0 +1,266 @@
+$base-color: #00c2ad;
+//리스트 상단
+.listTop {
+  display: flex;
+  width: 100%;
+  margin: 30px 0 20px 0;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 49px !important;
+  .MuiInputBase-root {
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+  }
+  .MuiOutlinedInput-root {
+    margin-right: 10px;
+    background: white;
+    border-radius: 15px;
+  }
+  .MuiButtonBase-root {
+    background-color: $base-color;
+  }
+  .wit-210 {
+    width: 250px !important;
+  }
+  .leftItem {
+    .shotBtn {
+      width: 123px;
+      height: 49px !important;
+    }
+    .MuiInputBase-input {
+      padding: 12.5px 14px !important;
+    }
+    .MuiSelect-select {
+      width: 100%;
+      padding: 12.5px 25.5px 12.5px 12.5px !important;
+    }
+
+    display: flex;
+    flex-direction: row;
+    .search {
+      width: 125px;
+      height: 49px;
+      padding: 15px 35px;
+      font-weight: 400;
+    }
+  }
+  .rightItem {
+    .add {
+      width: 191px;
+      height: 49px;
+    }
+    .longBtn {
+      width: 179px;
+      height: 49px;
+    }
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+//페이지네이션 스타일링
+.MuiPagination-root {
+  margin: 30px 0 20px;
+
+  ul.MuiPagination-ul {
+    width: 990px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .Mui-selected {
+      background-color: black !important;
+    }
+    .MuiButtonBase-root {
+      border-radius: 50%;
+      &:disabled {
+        background-color: rgba(0, 0, 0, 0) !important;
+      }
+    }
+  }
+}
+
+.oneLine {
+  border-bottom: 1px solid #efefef ;
+  margin-bottom: 50px;
+  //display: flex;
+  position: relative;
+  //overflow: hidden;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 23px;
+  &.photoDiv {
+    & > div {
+      float: left;
+      width: 50%;
+      margin-right: 0;
+    }
+    &.free {
+      position: absolute;
+      top: 26px;
+      right: 0;
+      float: right;
+      width: 230px;
+      & > div {
+        width: 100% !important;
+      }
+      &.small {
+        right: 250px;
+        //position: relative;
+        float: initial;
+        width: 150px;
+        .photoList {
+          .oneLine {
+            width: 150px !important;
+            .areaCut.blankBtn {
+              width: 150px !important;
+              height: 150px;
+              object-fit: cover;
+            }
+          }
+          input[type="file"] {
+            width: 150px !important;
+            height: 150px !important;
+          }
+        }
+        &.right {
+          right: 60px;
+        }
+      }
+      &.top {
+        top: 35px;
+      }
+      .photoList {
+        .oneLine {
+          width: 190px !important;
+          .areaCut.blankBtn {
+            width: 190px !important;
+            height: 190px;
+            object-fit: cover;
+          }
+        }
+        input[type="file"] {
+          width: 190px !important;
+          height: 190px !important;
+        }
+      }
+    }
+    &.banner {
+      height: 173px;
+      .photoList {
+        input[type="file"] {
+          height: 122px !important;
+        }
+        .oneLine .areaCut.blankBtn {
+          height: 117px !important;
+        }
+      }
+    }
+  }
+  .MuiInputBase-root {
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 10px 14px !important;
+    &:focus {
+      border: 1px solid $base-color;
+    }
+  }
+  //.MuiFormControl-root {
+  //  width: 100%;
+  //}
+  .full {
+    width: 100% !important;
+  }
+  .input-10 {
+    width: 10% !important;
+  }
+  .input-15 {
+    width: 15% !important;
+  }
+  .input-20 {
+    width: 20% !important;
+  }
+  .input-30 {
+    width: 30% !important;
+  }
+  .input-40 {
+    width: 40% !important;
+  }
+  .input-50 {
+    width: 50% !important;
+  }
+  .input-60 {
+    width: 63% !important;
+  }
+  .mr-10 {
+    margin-right: 10px;
+  }
+  .mt-30 {
+    margin-top: 30px;
+  }
+  .searchBtn {
+    width: 123px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+  }
+  .MuiSelect-select {
+    width: 160px;
+    border: 0 !important;
+    padding: 0 !important;
+  }
+}
+.MuiInputBase-root{
+  border: 0 !important;
+  border-bottom-style:none!important;
+}
+.Mui-disabled:before{
+  border-bottom-style:none!important;
+
+}
+//인풋용 css
+.MuiInputBase-input {
+  height: 1.6em;
+  margin-right: 20px;
+  margin-bottom: 2px;
+  margin-left: 20px;
+  padding: 9px 5% 7px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  //box-shadow: 0 1px 1px #e4e4e4;
+
+  &.Mui-disabled {
+    padding-left: 10px;
+    color: #333 !important;
+    background-color: #fff !important;
+    -webkit-text-fill-color: #333 !important;
+  }
+  //멀티라인
+  &.MuiInputBase-inputMultiline {
+
+    height: auto;
+    //width: 90.5%;
+  }
+}
+
+.bor{
+  border: 1px solid #cccccc !important;
+}
+
+.listBtn{
+  margin-top: 20px;
+  height: 45px;
+  background-color: #00aabf;
+  font-weight:700 ;
+  border: 0;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 10px;
+cursor: pointer;
+  min-width: 120px;
+  font-size: 11pt;
+  box-shadow: none;
+  float: right;
+}
